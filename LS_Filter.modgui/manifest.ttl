@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/lsFilter>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-ls-filter.html> ;
+        modgui:stylesheet <modgui/stylesheet-ls-filter.css> ;
+        modgui:screenshot <modgui/screenshot-ls-filter.png> ;
+        modgui:thumbnail <modgui/thumbnail-ls-filter.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "LS Filter" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "zinc" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "type" ;
+            lv2:name "Filter type" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "cutoff" ;
+            lv2:name "Cutoff" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "resonance" ;
+            lv2:name "Resonance" ;
+        ] ;
+    ] .

@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/karaoke>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-karaoke.html> ;
+        modgui:stylesheet <modgui/stylesheet-karaoke.css> ;
+        modgui:screenshot <modgui/screenshot-karaoke.png> ;
+        modgui:thumbnail <modgui/thumbnail-karaoke.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Karaoke" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "zinc" ;
+        modgui:knob "steel" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "gain" ;
+            lv2:name "Vocal Volume" ;
+        ] ;
+    ] .

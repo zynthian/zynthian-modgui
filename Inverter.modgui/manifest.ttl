@@ -1,0 +1,16 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/inv>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-inverter.html> ;
+        modgui:stylesheet <modgui/stylesheet-inverter.css> ;
+        modgui:screenshot <modgui/screenshot-inverter.png> ;
+        modgui:thumbnail <modgui/thumbnail-inverter.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Inverter" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "black" ;
+    ] .
