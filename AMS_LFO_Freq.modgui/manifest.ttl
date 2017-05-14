@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/lfo_freq>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-ams-lfo-freq.html> ;
+        modgui:stylesheet <modgui/stylesheet-ams-lfo-freq.css> ;
+        modgui:screenshot <modgui/screenshot-ams-lfo-freq.png> ;
+        modgui:thumbnail <modgui/thumbnail-ams-lfo-freq.png> ;
+        modgui:brand "Aurélien " ;
+        modgui:label "AMS LFO - Freq" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-2-knobs" ;
+        modgui:color "slime" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "waveForm" ;
+            lv2:name "Wave Form" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "freq" ;
+            lv2:name "Freq" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "phi0" ;
+            lv2:name "Phi0" ;
+        ] ;
+    ] .
