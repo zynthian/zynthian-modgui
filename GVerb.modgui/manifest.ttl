@@ -1,0 +1,45 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/gverb>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-gverb.html> ;
+        modgui:stylesheet <modgui/stylesheet-gverb.css> ;
+        modgui:screenshot <modgui/screenshot-gverb.png> ;
+        modgui:thumbnail <modgui/thumbnail-gverb.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "GVerb" ;
+        modgui:model "lata" ;
+        modgui:panel "7-knobs" ;
+        modgui:color "cream" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "roomsize" ;
+            lv2:name "Roomsize" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "revtime" ;
+            lv2:name "Reverb time" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "damping" ;
+            lv2:name "Damping" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "inputbandwidth" ;
+            lv2:name "Input" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "drylevel" ;
+            lv2:name "Dry" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "earlylevel" ;
+            lv2:name "Early" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "taillevel" ;
+            lv2:name "Tail level" ;
+        ] ;
+    ] .
