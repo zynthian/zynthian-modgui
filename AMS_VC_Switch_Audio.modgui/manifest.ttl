@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/vcswitch_audio>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-ams-vc-switch-audio.html> ;
+        modgui:stylesheet <modgui/stylesheet-ams-vc-switch-audio.css> ;
+        modgui:screenshot <modgui/screenshot-ams-vc-switch-audio.png> ;
+        modgui:thumbnail <modgui/thumbnail-ams-vc-switch-audio.png> ;
+        modgui:brand "Aurélien " ;
+        modgui:label "AMS VC Switch Audio" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "red" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "switchlevel" ;
+            lv2:name "Switch Level" ;
+        ] ;
+    ] .

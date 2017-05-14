@@ -1,0 +1,38 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/vcalin_audio>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-ams-vca-lin-audio.html> ;
+        modgui:stylesheet <modgui/stylesheet-ams-vca-lin-audio.css> ;
+        modgui:screenshot <modgui/screenshot-ams-vca-lin-audio.png> ;
+        modgui:thumbnail <modgui/thumbnail-ams-vca-lin-audio.png> ;
+        modgui:brand "Aurélien " ;
+        modgui:label "AMS VCA Lin - Audio" ;
+        modgui:model "japanese" ;
+        modgui:panel "5-knobs" ;
+        modgui:color "pink" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "gain1" ;
+            lv2:name "Gain Offset" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "gain2" ;
+            lv2:name "2nd Gain Boost" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "in1" ;
+            lv2:name "In 1" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "in2" ;
+            lv2:name "In 2" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "outputLevel" ;
+            lv2:name "Output Level" ;
+        ] ;
+    ] .
