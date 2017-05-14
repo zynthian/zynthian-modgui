@@ -1,0 +1,16 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/absolute>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-signal-absolute-value.html> ;
+        modgui:stylesheet <modgui/stylesheet-signal-absolute-value.css> ;
+        modgui:screenshot <modgui/screenshot-signal-absolute-value.png> ;
+        modgui:thumbnail <modgui/thumbnail-signal-absolute-value.png> ;
+        modgui:brand "AVW" ;
+        modgui:label "Signal Absolute " ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "slime" ;
+    ] .
