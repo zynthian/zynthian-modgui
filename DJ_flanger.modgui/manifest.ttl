@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/djFlanger>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-dj-flanger.html> ;
+        modgui:stylesheet <modgui/stylesheet-dj-flanger.css> ;
+        modgui:screenshot <modgui/screenshot-dj-flanger.png> ;
+        modgui:thumbnail <modgui/thumbnail-dj-flanger.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "DJ flanger" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "pink" ;
+        modgui:knob "purple" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "sync" ;
+            lv2:name "Sync" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "period" ;
+            lv2:name "Period" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "depth" ;
+            lv2:name "Depth" ;
+        ] ;
+    ] .

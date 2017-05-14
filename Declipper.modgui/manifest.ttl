@@ -1,0 +1,16 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/declip>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-declipper.html> ;
+        modgui:stylesheet <modgui/stylesheet-declipper.css> ;
+        modgui:screenshot <modgui/screenshot-declipper.png> ;
+        modgui:thumbnail <modgui/thumbnail-declipper.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Declipper" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "white" ;
+    ] .

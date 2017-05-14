@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/diode>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-diode-processor.html> ;
+        modgui:stylesheet <modgui/stylesheet-diode-processor.css> ;
+        modgui:screenshot <modgui/screenshot-diode-processor.png> ;
+        modgui:thumbnail <modgui/thumbnail-diode-processor.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Diode Processor" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "black" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "mode" ;
+            lv2:name "Mode" ;
+        ] ;
+    ] .
