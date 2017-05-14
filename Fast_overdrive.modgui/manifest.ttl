@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/foverdrive>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-fast-overdrive.html> ;
+        modgui:stylesheet <modgui/stylesheet-fast-overdrive.css> ;
+        modgui:screenshot <modgui/screenshot-fast-overdrive.png> ;
+        modgui:thumbnail <modgui/thumbnail-fast-overdrive.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Fast overdrive" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "yellow" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "drive" ;
+            lv2:name "Drive" ;
+        ] ;
+    ] .
