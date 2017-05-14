@@ -1,0 +1,49 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/tapeDelay>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-tape-delay-simulation.html> ;
+        modgui:stylesheet <modgui/stylesheet-tape-delay-simulation.css> ;
+        modgui:screenshot <modgui/screenshot-tape-delay-simulation.png> ;
+        modgui:thumbnail <modgui/thumbnail-tape-delay-simulation.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Tape Delay" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "brown" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "speed" ;
+            lv2:name "Tape speed (inches/sec, 1=normal)" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "da_db" ;
+            lv2:name "Dry level (dB)" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "t1d" ;
+            lv2:name "Tap 1 distance (inches)" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "t1a_db" ;
+            lv2:name "Tap 1 level (dB)" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "t2d" ;
+            lv2:name "Tap 2 distance (inches)" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "t2a_db" ;
+            lv2:name "Tap 2 level (dB)" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "t3d" ;
+            lv2:name "Tap 3 distance (inches)" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "t3a_db" ;
+            lv2:name "Tap 3 level (dB)" ;
+        ] ;
+    ] .
