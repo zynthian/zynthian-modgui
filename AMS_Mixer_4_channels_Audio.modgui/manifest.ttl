@@ -1,0 +1,38 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/mixer_4ch_audio>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-ams-mixer-4-channels-audio.html> ;
+        modgui:stylesheet <modgui/stylesheet-ams-mixer-4-channels-audio.css> ;
+        modgui:screenshot <modgui/screenshot-ams-mixer-4-channels-audio.png> ;
+        modgui:thumbnail <modgui/thumbnail-ams-mixer-4-channels-audio.png> ;
+        modgui:brand "Aurélien " ;
+        modgui:label "AMS Mixer 4 chan" ;
+        modgui:model "boxy" ;
+        modgui:panel "5-sliders" ;
+        modgui:color "darkblue" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "gain" ;
+            lv2:name "Gain" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "volume1" ;
+            lv2:name "1" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "volume2" ;
+            lv2:name "2" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "volume3" ;
+            lv2:name "3" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "volume4" ;
+            lv2:name "4" ;
+        ] ;
+    ] .

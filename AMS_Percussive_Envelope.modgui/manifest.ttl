@@ -1,0 +1,38 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/percussiveenv>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-ams-percussive-envelope.html> ;
+        modgui:stylesheet <modgui/stylesheet-ams-percussive-envelope.css> ;
+        modgui:screenshot <modgui/screenshot-ams-percussive-envelope.png> ;
+        modgui:thumbnail <modgui/thumbnail-ams-percussive-envelope.png> ;
+        modgui:brand "Aurélien " ;
+        modgui:label "AMS Percussive Envelope" ;
+        modgui:model "japanese" ;
+        modgui:panel "5-knobs" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "attack" ;
+            lv2:name "Attack" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "decay" ;
+            lv2:name "Decay" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "delay" ;
+            lv2:name "Delay" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "hold" ;
+            lv2:name "Hold" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "timeScale" ;
+            lv2:name "Time Scale" ;
+        ] ;
+    ] .
