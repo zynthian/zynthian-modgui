@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/crossoverDist>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-crossover-distortion.html> ;
+        modgui:stylesheet <modgui/stylesheet-crossover-distortion.css> ;
+        modgui:screenshot <modgui/screenshot-crossover-distortion.png> ;
+        modgui:thumbnail <modgui/thumbnail-crossover-distortion.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Crossover Distortion" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "yellow" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "amp" ;
+            lv2:name "Amplitude" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "smooth" ;
+            lv2:name "Smoothing" ;
+        ] ;
+    ] .
