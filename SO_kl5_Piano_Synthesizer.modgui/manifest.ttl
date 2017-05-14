@@ -1,0 +1,42 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<urn:50m30n3:plugins:SO-kl5>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-so-kl5-piano-synthesizer.html> ;
+        modgui:stylesheet <modgui/stylesheet-so-kl5-piano-synthesizer.css> ;
+        modgui:screenshot <modgui/screenshot-so-kl5-piano-synthesizer.png> ;
+        modgui:thumbnail <modgui/thumbnail-so-kl5-piano-synthesizer.png> ;
+        modgui:brand "SO-SYNTH" ;
+        modgui:label "SO-kl5 Piano Syn" ;
+        modgui:model "boxy" ;
+        modgui:panel "6-knobs" ;
+        modgui:color "darkblue" ;
+        modgui:knob "blue" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "sustain" ;
+            lv2:name "Sustain" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "resonance" ;
+            lv2:name "Filter Resonance" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "cutoff" ;
+            lv2:name "Filter Cutoff" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "attack" ;
+            lv2:name "Attack" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "volume" ;
+            lv2:name "Volume" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "channel" ;
+            lv2:name "Midi Channel" ;
+        ] ;
+    ] .

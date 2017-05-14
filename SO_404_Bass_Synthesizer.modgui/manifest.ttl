@@ -1,0 +1,45 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<urn:50m30n3:plugins:SO-404>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-so-404-bass-synthesizer.html> ;
+        modgui:stylesheet <modgui/stylesheet-so-404-bass-synthesizer.css> ;
+        modgui:screenshot <modgui/screenshot-so-404-bass-synthesizer.png> ;
+        modgui:thumbnail <modgui/thumbnail-so-404-bass-synthesizer.png> ;
+        modgui:brand "" ;
+        modgui:label "SO-404 Bass Synt" ;
+        modgui:model "lata" ;
+        modgui:panel "7-knobs" ;
+        modgui:color "yellow" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "volume" ;
+            lv2:name "Volume" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "cutoff" ;
+            lv2:name "Filter Cutoff" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "resonance" ;
+            lv2:name "Filter Resonance" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "envelope" ;
+            lv2:name "Filter Envelope" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "portamento" ;
+            lv2:name "Portamento Time" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "release" ;
+            lv2:name "Release Time" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "channel" ;
+            lv2:name "Midi Channel" ;
+        ] ;
+    ] .

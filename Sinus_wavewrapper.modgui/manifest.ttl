@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/sinusWavewrapper>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-sinus-wavewrapper.html> ;
+        modgui:stylesheet <modgui/stylesheet-sinus-wavewrapper.css> ;
+        modgui:screenshot <modgui/screenshot-sinus-wavewrapper.png> ;
+        modgui:thumbnail <modgui/thumbnail-sinus-wavewrapper.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Sinus Wavewrapper" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "cream" ;
+        modgui:knob "aluminium" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "wrap" ;
+            lv2:name "Wrap degree" ;
+        ] ;
+    ] .
