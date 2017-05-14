@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/modDelay>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-modulatable-delay.html> ;
+        modgui:stylesheet <modgui/stylesheet-modulatable-delay.css> ;
+        modgui:screenshot <modgui/screenshot-modulatable-delay.png> ;
+        modgui:thumbnail <modgui/thumbnail-modulatable-delay.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Modulatable Delay" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "gold" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "base" ;
+            lv2:name "Delay" ;
+        ] ;
+    ] .
