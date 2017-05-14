@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/divider>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-audio-divider-suboctave-generator.html> ;
+        modgui:stylesheet <modgui/stylesheet-audio-divider-suboctave-generator.css> ;
+        modgui:screenshot <modgui/screenshot-audio-divider-suboctave-generator.png> ;
+        modgui:thumbnail <modgui/thumbnail-audio-divider-suboctave-generator.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Audio Divider" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "gray" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "denominator" ;
+            lv2:name "Denominator" ;
+        ] ;
+    ] .

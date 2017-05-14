@@ -1,0 +1,34 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/beatrepeater_mono>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-beat-repeater-mono.html> ;
+        modgui:stylesheet <modgui/stylesheet-beat-repeater-mono.css> ;
+        modgui:screenshot <modgui/screenshot-beat-repeater-mono.png> ;
+        modgui:thumbnail <modgui/thumbnail-beat-repeater-mono.png> ;
+        modgui:brand "Aurélien " ;
+        modgui:label "Beat Repeater" ;
+        modgui:model "boxy" ;
+        modgui:panel "4-knobs" ;
+        modgui:color "zinc" ;
+        modgui:knob "aluminium" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "tempo" ;
+            lv2:name "Tempo" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "beatSize" ;
+            lv2:name "Beat Size" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "attack" ;
+            lv2:name "Attack (ms)" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "release" ;
+            lv2:name "Release (ms)" ;
+        ] ;
+    ] .
