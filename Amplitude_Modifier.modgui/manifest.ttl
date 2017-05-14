@@ -1,0 +1,34 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/amplitude>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-amplitude-modifier.html> ;
+        modgui:stylesheet <modgui/stylesheet-amplitude-modifier.css> ;
+        modgui:screenshot <modgui/screenshot-amplitude-modifier.png> ;
+        modgui:thumbnail <modgui/thumbnail-amplitude-modifier.png> ;
+        modgui:brand "Aurélien " ;
+        modgui:label "Amplitude Modifi" ;
+        modgui:model "boxy" ;
+        modgui:panel "4-knobs" ;
+        modgui:color "red" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "oldMin" ;
+            lv2:name "Old Min" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "oldMax" ;
+            lv2:name "Old Max" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "newMin" ;
+            lv2:name "New Min" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "newMax" ;
+            lv2:name "New Max" ;
+        ] ;
+    ] .

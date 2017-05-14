@@ -1,0 +1,16 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/alaw>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-a-law-compressor.html> ;
+        modgui:stylesheet <modgui/stylesheet-a-law-compressor.css> ;
+        modgui:screenshot <modgui/screenshot-a-law-compressor.png> ;
+        modgui:thumbnail <modgui/thumbnail-a-law-compressor.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "A-Law Compressor" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "red" ;
+    ] .
