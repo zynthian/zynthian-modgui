@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/bandpass_iir>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-glame-bandpass-filter.html> ;
+        modgui:stylesheet <modgui/stylesheet-glame-bandpass-filter.css> ;
+        modgui:screenshot <modgui/screenshot-glame-bandpass-filter.png> ;
+        modgui:thumbnail <modgui/thumbnail-glame-bandpass-filter.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Glame Bandpass Filter" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "zinc" ;
+        modgui:knob "silver" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "center" ;
+            lv2:name "Center Freq" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "width" ;
+            lv2:name "Bandwidth" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "stages" ;
+            lv2:name "Stages" ;
+        ] ;
+    ] .
