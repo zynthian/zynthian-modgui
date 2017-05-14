@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://kunz.corrupt.ch/products/tal-noisemaker>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-noize-mak3r.html> ;
+        modgui:stylesheet <modgui/stylesheet-noize-mak3r.css> ;
+        modgui:screenshot <modgui/screenshot-noize-mak3r.png> ;
+        modgui:thumbnail <modgui/thumbnail-noize-mak3r.png> ;
+        modgui:brand "TAL" ;
+        modgui:label "Noize Mak3r" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "lava" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "volume" ;
+            lv2:name "volume" ;
+        ] ;
+    ] .

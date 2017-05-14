@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/plate>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-plate-reverb.html> ;
+        modgui:stylesheet <modgui/stylesheet-plate-reverb.css> ;
+        modgui:screenshot <modgui/screenshot-plate-reverb.png> ;
+        modgui:thumbnail <modgui/thumbnail-plate-reverb.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Plate Reverb" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "wood3" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "time" ;
+            lv2:name "Reverb" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "damping" ;
+            lv2:name "Damping" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "wet" ;
+            lv2:name "Dry/wet" ;
+        ] ;
+    ] .

@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/retroFlange>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-retro-flanger.html> ;
+        modgui:stylesheet <modgui/stylesheet-retro-flanger.css> ;
+        modgui:screenshot <modgui/screenshot-retro-flanger.png> ;
+        modgui:thumbnail <modgui/thumbnail-retro-flanger.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Retro Flanger" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "wood4" ;
+        modgui:knob "steel" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "delay_depth_avg" ;
+            lv2:name "Stall" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "law_freq" ;
+            lv2:name "Flange FREQ" ;
+        ] ;
+    ] .

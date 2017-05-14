@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/impulse_fc>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-non-bandlimited-single-sample-impulses.html> ;
+        modgui:stylesheet <modgui/stylesheet-non-bandlimited-single-sample-impulses.css> ;
+        modgui:screenshot <modgui/screenshot-non-bandlimited-single-sample-impulses.png> ;
+        modgui:thumbnail <modgui/thumbnail-non-bandlimited-single-sample-impulses.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Single Sample Impulse" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "zinc" ;
+        modgui:knob "aluminium" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "frequency" ;
+            lv2:name "Frequency" ;
+        ] ;
+    ] .

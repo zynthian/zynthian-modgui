@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/pointerCastDistortion>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-pointer-cast-distortion.html> ;
+        modgui:stylesheet <modgui/stylesheet-pointer-cast-distortion.css> ;
+        modgui:screenshot <modgui/screenshot-pointer-cast-distortion.png> ;
+        modgui:thumbnail <modgui/thumbnail-pointer-cast-distortion.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Pointer Cast Distortion" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "yellow" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "cutoff" ;
+            lv2:name "Cutoff" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "wet" ;
+            lv2:name "Dry/wet" ;
+        ] ;
+    ] .

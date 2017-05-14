@@ -1,0 +1,42 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/multivoiceChorus>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-multivoice-chorus.html> ;
+        modgui:stylesheet <modgui/stylesheet-multivoice-chorus.css> ;
+        modgui:screenshot <modgui/screenshot-multivoice-chorus.png> ;
+        modgui:thumbnail <modgui/thumbnail-multivoice-chorus.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Multivoice Chorus" ;
+        modgui:model "japanese" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "cyan" ;
+        modgui:knob "cyan" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "voices" ;
+            lv2:name "Voices" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "delay_base" ;
+            lv2:name "Delay" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "voice_spread" ;
+            lv2:name "Voice  Sep" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "detune" ;
+            lv2:name "Detune" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "law_freq" ;
+            lv2:name "LFO" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "attendb" ;
+            lv2:name "Output" ;
+        ] ;
+    ] .
