@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/valve>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-valve-saturation.html> ;
+        modgui:stylesheet <modgui/stylesheet-valve-saturation.css> ;
+        modgui:screenshot <modgui/screenshot-valve-saturation.png> ;
+        modgui:thumbnail <modgui/thumbnail-valve-saturation.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Valve Saturation" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "racing" ;
+        modgui:knob "green" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "q_p" ;
+            lv2:name "Level" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "dist_p" ;
+            lv2:name "Character" ;
+        ] ;
+    ] .

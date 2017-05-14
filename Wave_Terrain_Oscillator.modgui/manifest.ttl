@@ -1,0 +1,16 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/waveTerrain>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-wave-terrain-oscillator.html> ;
+        modgui:stylesheet <modgui/stylesheet-wave-terrain-oscillator.css> ;
+        modgui:screenshot <modgui/screenshot-wave-terrain-oscillator.png> ;
+        modgui:thumbnail <modgui/thumbnail-wave-terrain-oscillator.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Wave Terrain Oscillator" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "zinc" ;
+    ] .

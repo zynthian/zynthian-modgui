@@ -1,0 +1,16 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/zm1>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-z-1.html> ;
+        modgui:stylesheet <modgui/stylesheet-z-1.css> ;
+        modgui:screenshot <modgui/screenshot-z-1.png> ;
+        modgui:thumbnail <modgui/thumbnail-z-1.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "z-1" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "wood3" ;
+    ] .

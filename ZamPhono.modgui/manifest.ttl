@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<urn:zamaudio:ZamPhono>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-zamphono.html> ;
+        modgui:stylesheet <modgui/stylesheet-zamphono.css> ;
+        modgui:screenshot <modgui/screenshot-zamphono.png> ;
+        modgui:thumbnail <modgui/thumbnail-zamphono.png> ;
+        modgui:brand "Zam" ;
+        modgui:label "ZamPhono" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "gold" ;
+        modgui:knob "gold" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "inv" ;
+            lv2:name "Reproduction/Production" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "type" ;
+            lv2:name "Phono Filter Type" ;
+        ] ;
+    ] .

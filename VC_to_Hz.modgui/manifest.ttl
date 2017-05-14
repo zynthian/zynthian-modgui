@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/vctohz>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-vc-to-hz.html> ;
+        modgui:stylesheet <modgui/stylesheet-vc-to-hz.css> ;
+        modgui:screenshot <modgui/screenshot-vc-to-hz.png> ;
+        modgui:thumbnail <modgui/thumbnail-vc-to-hz.png> ;
+        modgui:brand "Aurélien " ;
+        modgui:label "VC to Hz" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-1-knob" ;
+        modgui:color "zinc" ;
+        modgui:knob "steel" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "conversionMode" ;
+            lv2:name "Conversion Mode" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "octaveOffset" ;
+            lv2:name "Octave Offset" ;
+        ] ;
+    ] .
