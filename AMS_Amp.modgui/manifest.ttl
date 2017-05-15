@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/amp>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-ams-amp.html> ;
+        modgui:stylesheet <modgui/stylesheet-ams-amp.css> ;
+        modgui:screenshot <modgui/screenshot-ams-amp.png> ;
+        modgui:thumbnail <modgui/thumbnail-ams-amp.png> ;
+        modgui:brand "Aurélien " ;
+        modgui:label "AMS Amp" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "darkblue" ;
+        modgui:knob "blue" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "gain" ;
+            lv2:name "Gain" ;
+        ] ;
+    ] .

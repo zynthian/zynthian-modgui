@@ -1,0 +1,38 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/autoPhaser>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-auto-phaser.html> ;
+        modgui:stylesheet <modgui/stylesheet-auto-phaser.css> ;
+        modgui:screenshot <modgui/screenshot-auto-phaser.png> ;
+        modgui:thumbnail <modgui/thumbnail-auto-phaser.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Auto phaser" ;
+        modgui:model "boxy" ;
+        modgui:panel "5-knobs" ;
+        modgui:color "orange" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "attack_p" ;
+            lv2:name "Attack" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "decay_p" ;
+            lv2:name "Decay" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "depth_p" ;
+            lv2:name "Modulation" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "fb" ;
+            lv2:name "Feedback" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "spread" ;
+            lv2:name "Spread" ;
+        ] ;
+    ] .

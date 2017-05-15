@@ -1,0 +1,17 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/surroundEncoder>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-surround-matrix-encoder.html> ;
+        modgui:stylesheet <modgui/stylesheet-surround-matrix-encoder.css> ;
+        modgui:screenshot <modgui/screenshot-surround-matrix-encoder.png> ;
+        modgui:thumbnail <modgui/thumbnail-surround-matrix-encoder.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Surround Matrix " ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-1-knob" ;
+        modgui:color "wood2" ;
+        modgui:knob "aluminium" ;
+    ] .

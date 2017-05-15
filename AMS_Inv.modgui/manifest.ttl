@@ -1,0 +1,16 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/inv>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-ams-inv.html> ;
+        modgui:stylesheet <modgui/stylesheet-ams-inv.css> ;
+        modgui:screenshot <modgui/screenshot-ams-inv.png> ;
+        modgui:thumbnail <modgui/thumbnail-ams-inv.png> ;
+        modgui:brand "Aurélien " ;
+        modgui:label "AMS Inv" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "lava" ;
+    ] .

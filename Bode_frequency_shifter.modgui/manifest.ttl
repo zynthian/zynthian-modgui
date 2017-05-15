@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/bodeShifter>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-bode-frequency-shifter.html> ;
+        modgui:stylesheet <modgui/stylesheet-bode-frequency-shifter.css> ;
+        modgui:screenshot <modgui/screenshot-bode-frequency-shifter.png> ;
+        modgui:thumbnail <modgui/thumbnail-bode-frequency-shifter.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Bode Frequency Shifter" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "pink" ;
+        modgui:knob "purple" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "shift" ;
+            lv2:name "Freq" ;
+        ] ;
+    ] .

@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/hardLimiter>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-hard-limiter.html> ;
+        modgui:stylesheet <modgui/stylesheet-hard-limiter.css> ;
+        modgui:screenshot <modgui/screenshot-hard-limiter.png> ;
+        modgui:thumbnail <modgui/thumbnail-hard-limiter.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Hard Limiter" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "red" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "limit_db" ;
+            lv2:name "Limit" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "wet_gain" ;
+            lv2:name "Wet" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "res_gain" ;
+            lv2:name "Residue" ;
+        ] ;
+    ] .

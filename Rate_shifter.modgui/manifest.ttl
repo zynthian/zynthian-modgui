@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/rateShifter>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-rate-shifter.html> ;
+        modgui:stylesheet <modgui/stylesheet-rate-shifter.css> ;
+        modgui:screenshot <modgui/screenshot-rate-shifter.png> ;
+        modgui:thumbnail <modgui/thumbnail-rate-shifter.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Rate Shifter" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "zinc" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "rate" ;
+            lv2:name "Rate" ;
+        ] ;
+    ] .

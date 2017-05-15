@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/downsampler_mono>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-downsampler-mono.html> ;
+        modgui:stylesheet <modgui/stylesheet-downsampler-mono.css> ;
+        modgui:screenshot <modgui/screenshot-downsampler-mono.png> ;
+        modgui:thumbnail <modgui/thumbnail-downsampler-mono.png> ;
+        modgui:brand "Aurélien " ;
+        modgui:label "Downsampler" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "red" ;
+        modgui:knob "aluminium" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "ratio" ;
+            lv2:name "Ratio" ;
+        ] ;
+    ] .

@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://arcticanaudio.com/plugins/thepilgrim>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-the-pilgrim.html> ;
+        modgui:stylesheet <modgui/stylesheet-the-pilgrim.css> ;
+        modgui:screenshot <modgui/screenshot-the-pilgrim.png> ;
+        modgui:thumbnail <modgui/thumbnail-the-pilgrim.png> ;
+        modgui:brand "Artican" ;
+        modgui:label "The Pilgrim" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "zinc" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "filter_freq" ;
+            lv2:name "Filter Freq" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "mix" ;
+            lv2:name "Mix" ;
+        ] ;
+    ] .

@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/lowpass_iir>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-glame-lowpass-filter.html> ;
+        modgui:stylesheet <modgui/stylesheet-glame-lowpass-filter.css> ;
+        modgui:screenshot <modgui/screenshot-glame-lowpass-filter.png> ;
+        modgui:thumbnail <modgui/thumbnail-glame-lowpass-filter.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Glame Lowpass Filter" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "white" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "cutoff" ;
+            lv2:name "Cutoff" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "stages" ;
+            lv2:name "Stages" ;
+        ] ;
+    ] .

@@ -1,0 +1,34 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/lfo_tempo>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-ams-lfo-tempo.html> ;
+        modgui:stylesheet <modgui/stylesheet-ams-lfo-tempo.css> ;
+        modgui:screenshot <modgui/screenshot-ams-lfo-tempo.png> ;
+        modgui:thumbnail <modgui/thumbnail-ams-lfo-tempo.png> ;
+        modgui:brand "Aurélien " ;
+        modgui:label "AMS LFO - Tempo" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-3-knobs" ;
+        modgui:color "wood2" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "waveForm" ;
+            lv2:name "Wave Form" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "tempo" ;
+            lv2:name "Tempo" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "tempoMultiplier" ;
+            lv2:name "Tempo Multiplier" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "phi0" ;
+            lv2:name "Phi0" ;
+        ] ;
+    ] .

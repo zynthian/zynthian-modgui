@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/ringmodulator_audio>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-ams-ring-modulator-audio.html> ;
+        modgui:stylesheet <modgui/stylesheet-ams-ring-modulator-audio.css> ;
+        modgui:screenshot <modgui/screenshot-ams-ring-modulator-audio.png> ;
+        modgui:thumbnail <modgui/thumbnail-ams-ring-modulator-audio.png> ;
+        modgui:brand "Aurélien " ;
+        modgui:label "AMS Ring Modulator" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "racing" ;
+        modgui:knob "green" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "gain" ;
+            lv2:name "Gain" ;
+        ] ;
+    ] .

@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/lookaheadLimiter>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-lookahead-limiter.html> ;
+        modgui:stylesheet <modgui/stylesheet-lookahead-limiter.css> ;
+        modgui:screenshot <modgui/screenshot-lookahead-limiter.png> ;
+        modgui:thumbnail <modgui/thumbnail-lookahead-limiter.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Lookahead Limiter" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "petrol" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "limit" ;
+            lv2:name "Limit" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "delay_s" ;
+            lv2:name "Delay" ;
+        ] ;
+    ] .

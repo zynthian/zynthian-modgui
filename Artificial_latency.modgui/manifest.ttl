@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/artificialLatency>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-artificial-latency.html> ;
+        modgui:stylesheet <modgui/stylesheet-artificial-latency.css> ;
+        modgui:screenshot <modgui/screenshot-artificial-latency.png> ;
+        modgui:thumbnail <modgui/thumbnail-artificial-latency.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Artificial Latency" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "gray" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "delay" ;
+            lv2:name "Delay (ms)" ;
+        ] ;
+    ] .

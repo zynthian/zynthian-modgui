@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/bodeShifterCV>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-bode-frequency-shifter-cv.html> ;
+        modgui:stylesheet <modgui/stylesheet-bode-frequency-shifter-cv.css> ;
+        modgui:screenshot <modgui/screenshot-bode-frequency-shifter-cv.png> ;
+        modgui:thumbnail <modgui/thumbnail-bode-frequency-shifter-cv.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Bode Frequency Shifter CV" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "pink" ;
+        modgui:knob "purple" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "shift_b" ;
+            lv2:name "Base" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "mix" ;
+            lv2:name "Mix" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "atten" ;
+            lv2:name "CV" ;
+        ] ;
+    ] .

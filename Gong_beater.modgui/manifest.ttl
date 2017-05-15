@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/gongBeater>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-gong-beater.html> ;
+        modgui:stylesheet <modgui/stylesheet-gong-beater.css> ;
+        modgui:screenshot <modgui/screenshot-gong-beater.png> ;
+        modgui:thumbnail <modgui/thumbnail-gong-beater.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Gong Beater" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "darkblue" ;
+        modgui:knob "blue" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "imp_gain" ;
+            lv2:name "Impulse" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "strike_gain" ;
+            lv2:name "Strike" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "strike_duration" ;
+            lv2:name "Duration" ;
+        ] ;
+    ] .

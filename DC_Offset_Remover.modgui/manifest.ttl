@@ -1,0 +1,16 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/dcRemove>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-dc-offset-remover.html> ;
+        modgui:stylesheet <modgui/stylesheet-dc-offset-remover.css> ;
+        modgui:screenshot <modgui/screenshot-dc-offset-remover.png> ;
+        modgui:thumbnail <modgui/thumbnail-dc-offset-remover.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "DC Offset Remover" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "brown" ;
+    ] .

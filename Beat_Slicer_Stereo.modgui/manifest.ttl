@@ -1,0 +1,38 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/beatslicer_stereo>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-beat-slicer-stereo.html> ;
+        modgui:stylesheet <modgui/stylesheet-beat-slicer-stereo.css> ;
+        modgui:screenshot <modgui/screenshot-beat-slicer-stereo.png> ;
+        modgui:thumbnail <modgui/thumbnail-beat-slicer-stereo.png> ;
+        modgui:brand "Aurélien " ;
+        modgui:label "Beat Slicer - Stereo" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-4-knobs" ;
+        modgui:color "black" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "reverseMode" ;
+            lv2:name "Reverse Mode" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "tempo" ;
+            lv2:name "Tempo" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "sliceSize" ;
+            lv2:name "Slice Size" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "sampleSize" ;
+            lv2:name "Sample Size (nb beats)" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "attack" ;
+            lv2:name "Attack (ms)" ;
+        ] ;
+    ] .

@@ -1,0 +1,16 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://github.com/ssj71/reMID.lv2>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-remid.html> ;
+        modgui:stylesheet <modgui/stylesheet-remid.css> ;
+        modgui:screenshot <modgui/screenshot-remid.png> ;
+        modgui:thumbnail <modgui/thumbnail-remid.png> ;
+        modgui:brand "Spencer Ja" ;
+        modgui:label "reMID" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "wood1" ;
+    ] .

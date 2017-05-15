@@ -1,0 +1,34 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/svf>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-state-variable-filter.html> ;
+        modgui:stylesheet <modgui/stylesheet-state-variable-filter.css> ;
+        modgui:screenshot <modgui/screenshot-state-variable-filter.png> ;
+        modgui:thumbnail <modgui/thumbnail-state-variable-filter.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "State Variable Filter" ;
+        modgui:model "japanese" ;
+        modgui:panel "4-knobs" ;
+        modgui:color "yellow" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "filt_type" ;
+            lv2:name "Type" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "filt_freq" ;
+            lv2:name "Frequency" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "filt_q" ;
+            lv2:name "Filter Q" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "filt_res" ;
+            lv2:name "Resonance" ;
+        ] ;
+    ] .

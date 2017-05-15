@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/slew>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-ams-slew-limiter.html> ;
+        modgui:stylesheet <modgui/stylesheet-ams-slew-limiter.css> ;
+        modgui:screenshot <modgui/screenshot-ams-slew-limiter.png> ;
+        modgui:thumbnail <modgui/thumbnail-ams-slew-limiter.png> ;
+        modgui:brand "Aurélien " ;
+        modgui:label "AMS Slew Limiter" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "purple" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "timeUp" ;
+            lv2:name "Time Up" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "timeDown" ;
+            lv2:name "Time Down" ;
+        ] ;
+    ] .

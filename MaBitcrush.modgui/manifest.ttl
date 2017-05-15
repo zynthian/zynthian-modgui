@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://distrho.sf.net/plugins/MaBitcrush>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-mabitcrush.html> ;
+        modgui:stylesheet <modgui/stylesheet-mabitcrush.css> ;
+        modgui:screenshot <modgui/screenshot-mabitcrush.png> ;
+        modgui:thumbnail <modgui/thumbnail-mabitcrush.png> ;
+        modgui:brand "DISTRHO" ;
+        modgui:label "MaBitcrush" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "slime" ;
+        modgui:knob "green" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "resolution" ;
+            lv2:name "resolution" ;
+        ] ;
+    ] .

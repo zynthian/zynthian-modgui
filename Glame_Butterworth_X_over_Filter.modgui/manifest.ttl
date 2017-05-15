@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/bwxover_iir>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-glame-butterworth-x-over-filter.html> ;
+        modgui:stylesheet <modgui/stylesheet-glame-butterworth-x-over-filter.css> ;
+        modgui:screenshot <modgui/screenshot-glame-butterworth-x-over-filter.png> ;
+        modgui:thumbnail <modgui/thumbnail-glame-butterworth-x-over-filter.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Glame Butter XOver" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "yellow" ;
+        modgui:knob "gold" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "cutoff" ;
+            lv2:name "Cutoff" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "resonance" ;
+            lv2:name "Resonance" ;
+        ] ;
+    ] .

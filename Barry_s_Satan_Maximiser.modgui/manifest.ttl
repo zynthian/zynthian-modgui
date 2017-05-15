@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/satanMaximiser>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-barrys-satan-maximiser.html> ;
+        modgui:stylesheet <modgui/stylesheet-barrys-satan-maximiser.css> ;
+        modgui:screenshot <modgui/screenshot-barrys-satan-maximiser.png> ;
+        modgui:thumbnail <modgui/thumbnail-barrys-satan-maximiser.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Barry's Satan Maximiser" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "tribal1" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "env_time_p" ;
+            lv2:name "Decay time" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "knee_point" ;
+            lv2:name "Knee point" ;
+        ] ;
+    ] .

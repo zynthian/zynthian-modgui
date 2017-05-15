@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/singlePara>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-single-band-parametric.html> ;
+        modgui:stylesheet <modgui/stylesheet-single-band-parametric.css> ;
+        modgui:screenshot <modgui/screenshot-single-band-parametric.png> ;
+        modgui:thumbnail <modgui/thumbnail-single-band-parametric.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Single Band Parametric" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-sliders" ;
+        modgui:color "gray" ;
+        modgui:knob "aluminium" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "gain" ;
+            lv2:name "Gain" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "fc" ;
+            lv2:name "Freq" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "bw" ;
+            lv2:name "Bandwidth" ;
+        ] ;
+    ] .

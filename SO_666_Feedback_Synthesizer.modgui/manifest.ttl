@@ -1,0 +1,38 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<urn:50m30n3:plugins:SO-666>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-so-666-feedback-synthesizer.html> ;
+        modgui:stylesheet <modgui/stylesheet-so-666-feedback-synthesizer.css> ;
+        modgui:screenshot <modgui/screenshot-so-666-feedback-synthesizer.png> ;
+        modgui:thumbnail <modgui/thumbnail-so-666-feedback-synthesizer.png> ;
+        modgui:brand "" ;
+        modgui:label "SO-666 Feedback " ;
+        modgui:model "japanese" ;
+        modgui:panel "5-knobs" ;
+        modgui:color "green" ;
+        modgui:knob "green" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "feedback" ;
+            lv2:name "Feedback" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "resonance" ;
+            lv2:name "Filter Resonance" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "cutoff" ;
+            lv2:name "Filter Cutoff" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "volume" ;
+            lv2:name "Volume" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "channel" ;
+            lv2:name "Midi Channel" ;
+        ] ;
+    ] .

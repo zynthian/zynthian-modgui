@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/smoothDecimate>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-smooth-decimator.html> ;
+        modgui:stylesheet <modgui/stylesheet-smooth-decimator.css> ;
+        modgui:screenshot <modgui/screenshot-smooth-decimator.png> ;
+        modgui:thumbnail <modgui/thumbnail-smooth-decimator.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Smooth Decimator" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "lava" ;
+        modgui:knob "copper" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "rate" ;
+            lv2:name "Resample" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "smooth" ;
+            lv2:name "Smoothing" ;
+        ] ;
+    ] .

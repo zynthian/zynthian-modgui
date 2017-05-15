@@ -1,0 +1,16 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/hilbert>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-hilbert-transformer.html> ;
+        modgui:stylesheet <modgui/stylesheet-hilbert-transformer.css> ;
+        modgui:screenshot <modgui/screenshot-hilbert-transformer.png> ;
+        modgui:thumbnail <modgui/thumbnail-hilbert-transformer.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Hilbert Transformer" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "black" ;
+    ] .

@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/allpass_n>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-allpass-delay-line-noninterpolating.html> ;
+        modgui:stylesheet <modgui/stylesheet-allpass-delay-line-noninterpolating.css> ;
+        modgui:screenshot <modgui/screenshot-allpass-delay-line-noninterpolating.png> ;
+        modgui:thumbnail <modgui/thumbnail-allpass-delay-line-noninterpolating.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Allpass Delay NonInterpolate" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "petrol" ;
+        modgui:knob "petrol" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "max_delay" ;
+            lv2:name "Max Delay" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "delay_time" ;
+            lv2:name "Delay" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "decay_time" ;
+            lv2:name "Decay" ;
+        ] ;
+    ] .

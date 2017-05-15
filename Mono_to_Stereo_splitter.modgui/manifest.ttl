@@ -1,0 +1,16 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/split>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-mono-to-stereo-splitter.html> ;
+        modgui:stylesheet <modgui/stylesheet-mono-to-stereo-splitter.css> ;
+        modgui:screenshot <modgui/screenshot-mono-to-stereo-splitter.png> ;
+        modgui:thumbnail <modgui/thumbnail-mono-to-stereo-splitter.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Mono to Stereo Splitter" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "white" ;
+    ] .

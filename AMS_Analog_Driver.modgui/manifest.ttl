@@ -1,0 +1,42 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/ad>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-ams-analog-driver.html> ;
+        modgui:stylesheet <modgui/stylesheet-ams-analog-driver.css> ;
+        modgui:screenshot <modgui/screenshot-ams-analog-driver.png> ;
+        modgui:thumbnail <modgui/thumbnail-ams-analog-driver.png> ;
+        modgui:brand "Aurélien " ;
+        modgui:label "AMS Analog Drive" ;
+        modgui:model "boxy" ;
+        modgui:panel "6-knobs" ;
+        modgui:color "zinc" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "detuneAmplitude" ;
+            lv2:name "Detune A" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "detuneModulation" ;
+            lv2:name "Detune M" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "detuneRate" ;
+            lv2:name "Detune R" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "driftAmplitude" ;
+            lv2:name "Drift A" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "driftModulation" ;
+            lv2:name "Drift M" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "driftRate" ;
+            lv2:name "Drift R" ;
+        ] ;
+    ] .

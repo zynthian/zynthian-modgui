@@ -1,0 +1,16 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/matrixStMS>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-matrix-stereo-to-ms.html> ;
+        modgui:stylesheet <modgui/stylesheet-matrix-stereo-to-ms.css> ;
+        modgui:screenshot <modgui/screenshot-matrix-stereo-to-ms.png> ;
+        modgui:thumbnail <modgui/thumbnail-matrix-stereo-to-ms.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Matrix: Stereo to MS" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "slime" ;
+    ] .

@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/comb_c>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-comb-delay-line-cubic-spline-interpolation.html> ;
+        modgui:stylesheet <modgui/stylesheet-comb-delay-line-cubic-spline-interpolation.css> ;
+        modgui:screenshot <modgui/screenshot-comb-delay-line-cubic-spline-interpolation.png> ;
+        modgui:thumbnail <modgui/thumbnail-comb-delay-line-cubic-spline-interpolation.png> ;
+        modgui:brand "SHW" ;
+        modgui:label "Comb Delay Line Cubic Spline Int" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "gray" ;
+        modgui:knob "aluminium" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "max_delay" ;
+            lv2:name "Max Delay" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "delay_time" ;
+            lv2:name "Delay" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "decay_time" ;
+            lv2:name "Decay" ;
+        ] ;
+    ] .

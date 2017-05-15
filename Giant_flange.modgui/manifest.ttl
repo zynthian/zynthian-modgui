@@ -1,0 +1,45 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/giantFlange>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-giant-flange.html> ;
+        modgui:stylesheet <modgui/stylesheet-giant-flange.css> ;
+        modgui:screenshot <modgui/screenshot-giant-flange.png> ;
+        modgui:thumbnail <modgui/thumbnail-giant-flange.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Giant Flange" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "purple" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "deldouble" ;
+            lv2:name "Double delay" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "freq1" ;
+            lv2:name "LFO 1" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "delay1" ;
+            lv2:name "Delay 1" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "freq2" ;
+            lv2:name "LFO 2" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "delay2" ;
+            lv2:name "Delay 2" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "feedback" ;
+            lv2:name "Feedback" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "wet" ;
+            lv2:name "Dry/Wet" ;
+        ] ;
+    ] .

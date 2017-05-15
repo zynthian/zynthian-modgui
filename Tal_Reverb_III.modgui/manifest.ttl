@@ -1,0 +1,34 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<urn:juce:TalReverb3>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-tal-reverb-iii.html> ;
+        modgui:stylesheet <modgui/stylesheet-tal-reverb-iii.css> ;
+        modgui:screenshot <modgui/screenshot-tal-reverb-iii.png> ;
+        modgui:thumbnail <modgui/thumbnail-tal-reverb-iii.png> ;
+        modgui:brand "TAL-Togu A" ;
+        modgui:label "Tal-Reverb-III" ;
+        modgui:model "boxy" ;
+        modgui:panel "4-knobs" ;
+        modgui:color "cream" ;
+        modgui:knob "bronze" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "dry" ;
+            lv2:name "dry" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "wet" ;
+            lv2:name "wet" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "room_size" ;
+            lv2:name "room size" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "pre_delay" ;
+            lv2:name "delay" ;
+        ] ;
+    ] .

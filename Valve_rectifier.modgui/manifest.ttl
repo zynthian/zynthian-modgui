@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/valveRect>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-valve-rectifier.html> ;
+        modgui:stylesheet <modgui/stylesheet-valve-rectifier.css> ;
+        modgui:screenshot <modgui/screenshot-valve-rectifier.png> ;
+        modgui:thumbnail <modgui/thumbnail-valve-rectifier.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Valve rectifier" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "orange" ;
+        modgui:knob "bronze" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "sag" ;
+            lv2:name "SAG" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "dist_p" ;
+            lv2:name "Distortion" ;
+        ] ;
+    ] .

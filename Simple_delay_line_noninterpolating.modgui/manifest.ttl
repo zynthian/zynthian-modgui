@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/delay_n>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-simple-delay-line-noninterpolating.html> ;
+        modgui:stylesheet <modgui/stylesheet-simple-delay-line-noninterpolating.css> ;
+        modgui:screenshot <modgui/screenshot-simple-delay-line-noninterpolating.png> ;
+        modgui:thumbnail <modgui/thumbnail-simple-delay-line-noninterpolating.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Simple Delay Line NonInterpolation" ;
+        modgui:model "japanese" ;
+        modgui:panel "4-knobs" ;
+        modgui:color "cyan" ;
+        modgui:knob "cyan" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "max_delay" ;
+            lv2:name "Max Delay" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "delay_time" ;
+            lv2:name "Delay" ;
+        ] ;
+    ] .

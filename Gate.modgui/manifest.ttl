@@ -1,0 +1,34 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/gate>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-gate.html> ;
+        modgui:stylesheet <modgui/stylesheet-gate.css> ;
+        modgui:screenshot <modgui/screenshot-gate.png> ;
+        modgui:thumbnail <modgui/thumbnail-gate.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Gate" ;
+        modgui:model "boxy" ;
+        modgui:panel "4-knobs" ;
+        modgui:color "zinc" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "threshold" ;
+            lv2:name "Threshold" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "attack" ;
+            lv2:name "Attack" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "decay" ;
+            lv2:name "Decay" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "range" ;
+            lv2:name "Range" ;
+        ] ;
+    ] .

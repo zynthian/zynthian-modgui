@@ -1,0 +1,16 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/cvtocontrol>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-cv-to-control.html> ;
+        modgui:stylesheet <modgui/stylesheet-cv-to-control.css> ;
+        modgui:screenshot <modgui/screenshot-cv-to-control.png> ;
+        modgui:thumbnail <modgui/thumbnail-cv-to-control.png> ;
+        modgui:brand "Aurélien " ;
+        modgui:label "CV to Control" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "black" ;
+    ] .

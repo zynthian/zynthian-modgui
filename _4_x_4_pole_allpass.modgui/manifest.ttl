@@ -1,0 +1,49 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/fourByFourPole>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-4-x-4-pole-allpass.html> ;
+        modgui:stylesheet <modgui/stylesheet-4-x-4-pole-allpass.css> ;
+        modgui:screenshot <modgui/screenshot-4-x-4-pole-allpass.png> ;
+        modgui:thumbnail <modgui/thumbnail-4-x-4-pole-allpass.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "4 x 4 Pole AllPass Phaser" ;
+        modgui:model "lata" ;
+        modgui:panel "8-knobs" ;
+        modgui:color "orange" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "f0" ;
+            lv2:name "Freq 1" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "fb0" ;
+            lv2:name "Feedback 1" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "f1" ;
+            lv2:name "Freq 2" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "fb1" ;
+            lv2:name "Feedback 2" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "f2" ;
+            lv2:name "Freq 3" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "fb2" ;
+            lv2:name "Feedback 3" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "f3" ;
+            lv2:name "freq 4" ;
+        ] , [
+            lv2:index 7 ;
+            lv2:symbol "fb3" ;
+            lv2:name "Feedback 4" ;
+        ] ;
+    ] .

@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/vcpanning>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-ams-vc-panning.html> ;
+        modgui:stylesheet <modgui/stylesheet-ams-vc-panning.css> ;
+        modgui:screenshot <modgui/screenshot-ams-vc-panning.png> ;
+        modgui:thumbnail <modgui/thumbnail-ams-vc-panning.png> ;
+        modgui:brand "Aurélien " ;
+        modgui:label "AMS VC Panning" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-select-2-knobs" ;
+        modgui:color "zinc" ;
+        modgui:knob "aluminium" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "panningMode" ;
+            lv2:name "Mode" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "panGain" ;
+            lv2:name "Gain" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "panOffset" ;
+            lv2:name "Offset" ;
+        ] ;
+    ] .

@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/transient>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-transient-mangler.html> ;
+        modgui:stylesheet <modgui/stylesheet-transient-mangler.css> ;
+        modgui:screenshot <modgui/screenshot-transient-mangler.png> ;
+        modgui:thumbnail <modgui/thumbnail-transient-mangler.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Transient Mangler" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "brown" ;
+        modgui:knob "bronze" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "attack" ;
+            lv2:name "Attack" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "sustain" ;
+            lv2:name "Sustain" ;
+        ] ;
+    ] .

@@ -1,0 +1,26 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/fadDelay>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-fractionally-addressed-delay-line.html> ;
+        modgui:stylesheet <modgui/stylesheet-fractionally-addressed-delay-line.css> ;
+        modgui:screenshot <modgui/screenshot-fractionally-addressed-delay-line.png> ;
+        modgui:thumbnail <modgui/thumbnail-fractionally-addressed-delay-line.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Fractionally Addressed Delay" ;
+        modgui:model "boxy" ;
+        modgui:panel "2-knobs" ;
+        modgui:color "white" ;
+        modgui:knob "steel" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "delay" ;
+            lv2:name "Delay" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "fb_db" ;
+            lv2:name "Feedback" ;
+        ] ;
+    ] .
