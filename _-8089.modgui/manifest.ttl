@@ -1,0 +1,16 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/vco2_cv>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-.html> ;
+        modgui:stylesheet <modgui/stylesheet-.css> ;
+        modgui:screenshot <modgui/screenshot-.png> ;
+        modgui:thumbnail <modgui/thumbnail-.png> ;
+        modgui:brand "AURÉLIEN" ;
+        modgui:label "VCO 2 CV" ;
+        modgui:model "boxy-small" ;
+        modgui:panel "1-footswitch" ;
+        modgui:color "black" ;
+    ] .

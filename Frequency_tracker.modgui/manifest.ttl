@@ -1,0 +1,22 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://plugin.org.uk/swh-plugins/freqTracker>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-frequency-tracker.html> ;
+        modgui:stylesheet <modgui/stylesheet-frequency-tracker.css> ;
+        modgui:screenshot <modgui/screenshot-frequency-tracker.png> ;
+        modgui:thumbnail <modgui/thumbnail-frequency-tracker.png> ;
+        modgui:brand "SWH" ;
+        modgui:label "Frequency Tracker" ;
+        modgui:model "boxy" ;
+        modgui:panel "1-knob" ;
+        modgui:color "red" ;
+        modgui:knob "black" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "speed" ;
+            lv2:name "Tracking speed" ;
+        ] ;
+    ] .
