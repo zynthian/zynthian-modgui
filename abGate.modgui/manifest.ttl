@@ -1,0 +1,38 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://hippie.lt/lv2/gate>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-abgate.html> ;
+        modgui:stylesheet <modgui/stylesheet-abgate.css> ;
+        modgui:screenshot <modgui/screenshot-abgate.png> ;
+        modgui:thumbnail <modgui/thumbnail-abgate.png> ;
+        modgui:brand "AB" ;
+        modgui:label "abGate" ;
+        modgui:model "boxy" ;
+        modgui:panel "5-knobs" ;
+        modgui:color "zinc" ;
+        modgui:knob "aluminium" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "threshold" ;
+            lv2:name "Threshold" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "attack" ;
+            lv2:name "Attack" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "hold" ;
+            lv2:name "Hold" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "decay" ;
+            lv2:name "Decay" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "gaterange" ;
+            lv2:name "Range" ;
+        ] ;
+    ] .

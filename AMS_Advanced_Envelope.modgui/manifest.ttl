@@ -1,0 +1,30 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<http://avwlv2.sourceforge.net/plugins/avw/advenv>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-ams-advanced-envelope.html> ;
+        modgui:stylesheet <modgui/stylesheet-ams-advanced-envelope.css> ;
+        modgui:screenshot <modgui/screenshot-ams-advanced-envelope.png> ;
+        modgui:thumbnail <modgui/thumbnail-ams-advanced-envelope.png> ;
+        modgui:brand "Aurélien " ;
+        modgui:label "AMS Advanced Envelope" ;
+        modgui:model "boxy" ;
+        modgui:panel "3-knobs" ;
+        modgui:color "slime" ;
+        modgui:knob "green" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "timeScale" ;
+            lv2:name "Time Scale" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "sustain" ;
+            lv2:name "Sustain" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "delay" ;
+            lv2:name "Delay" ;
+        ] ;
+    ] .
